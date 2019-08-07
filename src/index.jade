@@ -2,3 +2,302 @@ extends _layouts/base
 
 block content
     main.home
+        section.home__hero
+            .container
+                .row
+                    .col-24
+                        .home__hero__container
+                            .home__hero__vtr-logo
+                                img(src="/images/logo-vtr.png")
+                            .home__hero__wrapper
+                                ul.home__hero__list
+                                    li.home__hero__item 
+                                        a(href="#") preventas
+                                    li.home__hero__item
+                                        a(href="#") lineup
+                                    li.home__hero__item 
+                                        a(href="#") vtr shuffle
+                                    li.home__hero__item 
+                                        a(href="#") vod
+                                    li.home__hero__item
+                                        a(href="#") lollaquizz
+                                .home__hero__image
+                                    img(src="/images/heading.png")
+                            .home__hero__lolla-logo
+                                img(src="/images/logo lolla.png")
+        section.home__content
+            .container
+                .row
+                    .col-24
+                        .home__content__wrapper.home__content__wrapper--top
+                            h2.home__content__title
+                                |si eres vtr
+                                span ,vive hoy la preventa de lollapalooza chile 
+                                span.-number 2020 
+                                span con los beneficios exclusivos que tenemos para ti.
+                        .home__content__wrapper.home__content__wrapper--middle.js-wrapper
+                            .home__content__group.home__content__group--magenta(data-target="general")
+                                .home__content__image
+                                    img(src="/images/pase-lolla-general-cover.png")
+                            .home__content__group.home__content__group--green(data-target="lounge")
+                                .home__content__image
+                                    img(src="/images/pase-lolla-lounge-cover.png")
+                            .home__content__group.home__content__group--yellow(data-target="lounge-premium")
+                                .home__content__image
+                                    img(src="/images/pase-lolla-lounge-premium-cover.png")
+
+                        .home__content__wrapper.home__content__wrapper--middle(data-content="general")
+                            .home__content__container.home__content__container--general
+                                .home__content__container-wrapper
+                                    .home__content__container-image
+                                        img(src="/images/pase-lolla-general.png")
+                                    button.home__content__close-button
+                                        span.-left
+                                        span.-right
+                                .home__content__table.home__content__table--titles
+                                    .home__content__table-column.home__content__table-column--titles
+                                        .home__content__table-cell
+                                            h3 early bird
+                                        .home__content__table-cell
+                                            h3 preventa 1
+                                            p VTR 20% descuento
+                                        .home__content__table-cell
+                                            h3 preventa 2
+                                            p VTR 20% descuento
+                                        .home__content__table-cell
+                                            h3 preventa 3
+                                            p VTR 20% descuento
+                                        .home__content__table-cell
+                                            h3 preventa 4
+                                            p VTR 20% descuento
+                                        .home__content__table-cell
+                                            h3 preventa 5
+                                            p VTR 20% descuento
+                                    .home__content__table-container
+                                        .home__content__table-column.home__content__table-column--stock
+                                            .home__content__table-cell
+                                                h4 stock
+                                            .home__content__table-cell
+                                                h3 2.000
+                                            .home__content__table-cell
+                                                h3 10.000
+                                                p 4.100
+                                            .home__content__table-cell
+                                                h3 15.000
+                                                p 1.500
+                                            .home__content__table-cell
+                                                h3 14.000
+                                                p 2.700
+                                            .home__content__table-cell
+                                                h3 3.800
+                                                p 1.800
+                                            .home__content__table-cell
+                                                h3 2.000
+                                                p 450
+                                        .home__content__table-column.home__content__table-column--price
+                                            .home__content__table-cell
+                                                h4 precios
+                                            .home__content__table-cell
+                                                h3 $85.000
+                                            .home__content__table-cell
+                                                h3 $140.000
+                                                p $112.000
+                                            .home__content__table-cell
+                                                h3 $155.000
+                                                p $124.000
+                                            .home__content__table-cell
+                                                h3 $175.000
+                                                p $140.000
+                                            .home__content__table-cell
+                                                h3 $190.000
+                                                p $152.000
+                                            .home__content__table-cell
+                                                h3 $120.000
+                                                p $168.000
+                                        .home__content__table-column.home__content__table-column--service
+                                            .home__content__table-cell
+                                                h4 cargo por servicio
+                                            .home__content__table-cell
+                                                h3 $10.200
+                                            .home__content__table-cell
+                                                h3 $16.800
+                                                p $16.800
+                                            .home__content__table-cell
+                                                h3 $18.600
+                                                p $18.600
+                                            .home__content__table-cell
+                                                h3 $21.000
+                                                p $21.000
+                                            .home__content__table-cell
+                                                h3 $22.800
+                                                p $22.800
+                                            .home__content__table-cell
+                                                h3 $25.200
+                                                p $25.200
+                                        .home__content__table-column.home__content__table-column--final-price
+                                            .home__content__table-cell
+                                                h4 precio final
+                                            .home__content__table-cell
+                                                h3 $95.200
+                                            .home__content__table-cell
+                                                h3 $156.800
+                                                p $128.800
+                                            .home__content__table-cell
+                                                h3 $173.600
+                                                p $142.600
+                                            .home__content__table-cell
+                                                h3 $196.000
+                                                p $161.000
+                                            .home__content__table-cell
+                                                h3 $212.800
+                                                p $174.800
+                                            .home__content__table-cell
+                                                h3 $235.200
+                                                p $193.200
+                                a.home__content__buy-button(href="#") compra tu entrada
+
+                        .home__content__wrapper.home__content__wrapper--middle(data-content="lounge")
+                            .home__content__container.home__content__container--lounge
+                                .home__content__container-wrapper
+                                    .home__content__container-image
+                                        img(src="/images/pase-lolla-lounge.png")
+                                    button.home__content__close-button
+                                        span.-left
+                                        span.-right
+                                .home__content__table.home__content__table--lounge
+                                    .home__content__table-column.home__content__table-column--titles
+                                        .home__content__table-cell
+                                            h3 preventa 1
+                                            p VTR 20% descuento
+                                        .home__content__table-cell
+                                            h3 preventa 2
+                                            p VTR 20% descuento
+                                        .home__content__table-cell
+                                            h3 preventa 3
+                                            p VTR 20% descuento
+                                    .home__content__table-container
+                                        .home__content__table-column.home__content__table-column--stock
+                                            .home__content__table-cell
+                                                h4 stock
+                                            .home__content__table-cell
+                                                h3 200
+                                                p 100
+                                            .home__content__table-cell
+                                                h3 300
+                                                p 200
+                                            .home__content__table-cell
+                                                h3 300
+                                                p 150
+                                        .home__content__table-column.home__content__table-column--price
+                                            .home__content__table-cell
+                                                h4 precios
+                                            .home__content__table-cell
+                                                h3 $300.000
+                                                p $240.000
+                                            .home__content__table-cell
+                                                h3 $360.000
+                                                p $288.000
+                                            .home__content__table-cell
+                                                h3 $420.000
+                                                p $336.000
+                                        .home__content__table-column.home__content__table-column--service
+                                            .home__content__table-cell
+                                                h4 cargo por servicio
+                                            .home__content__table-cell
+                                                h3 $36.800
+                                                p $36.800
+                                            .home__content__table-cell
+                                                h3 $43.200
+                                                p $43.200
+                                            .home__content__table-cell
+                                                h3 $50.400
+                                                p $50.400
+                                        .home__content__table-column.home__content__table-column--final-price
+                                            .home__content__table-cell
+                                                h4 precio final
+                                            .home__content__table-cell
+                                                h3 $336.000
+                                                p $276.000
+                                            .home__content__table-cell
+                                                h3 $403.200
+                                                p $331.200
+                                            .home__content__table-cell
+                                                h3 $470.400
+                                                p $386.400
+                                a.home__content__buy-button(href="#") compra tu entrada
+
+                        .home__content__wrapper.home__content__wrapper--middle(data-content="lounge-premium")
+                            .home__content__container.home__content__container--lounge-premium
+                                .home__content__container-wrapper
+                                    .home__content__container-image
+                                        img(src="/images/pase-lolla-lounge-premium.png")
+                                    button.home__content__close-button
+                                        span.-left
+                                        span.-right
+                                .home__content__table.home__content__table--lounge-premium
+                                    .home__content__table-column.home__content__table-column--titles
+                                        .home__content__table-cell
+                                            h3 preventa 1
+                                            p VTR 20% descuento
+                                        .home__content__table-cell
+                                            h3 preventa 2
+                                            p VTR 20% descuento
+                                        .home__content__table-cell
+                                            h3 preventa 3
+                                            p VTR 20% descuento
+                                    .home__content__table-container
+                                        .home__content__table-column.home__content__table-column--stock
+                                            .home__content__table-cell
+                                                h4 stock
+                                            .home__content__table-cell
+                                                h3 100
+                                                p 50
+                                            .home__content__table-cell
+                                                h3 100
+                                                p 100
+                                            .home__content__table-cell
+                                                h3 150
+                                                p 50
+                                        .home__content__table-column.home__content__table-column--price
+                                            .home__content__table-cell
+                                                h4 precios
+                                            .home__content__table-cell
+                                                h3 $455.000
+                                                p $364.000
+                                            .home__content__table-cell
+                                                h3 $507.000
+                                                p $405.600
+                                            .home__content__table-cell
+                                                h3 $585.000
+                                                p $468.000
+                                        .home__content__table-column.home__content__table-column--service
+                                            .home__content__table-cell
+                                                h4 cargo por servicio
+                                            .home__content__table-cell
+                                                h3 $54.600
+                                                p $54.600
+                                            .home__content__table-cell
+                                                h3 $60.900
+                                                p $60.900
+                                            .home__content__table-cell
+                                                h3 $70.200
+                                                p $70.200
+                                        .home__content__table-column.home__content__table-column--final-price
+                                            .home__content__table-cell
+                                                h4 precio final
+                                            .home__content__table-cell
+                                                h3 $509.600
+                                                p $418.600
+                                            .home__content__table-cell
+                                                h3 $597.900
+                                                p $466.500
+                                            .home__content__table-cell
+                                                h3 $655.200
+                                                p $538.200
+                                a.home__content__buy-button(href="#") compra tu entrada
+
+                        .home__content__wrapper.home__content__wrapper--bottom
+
+                    //- .home__content__container
+
+                    //- .home__content__container

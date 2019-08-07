@@ -2,6 +2,25 @@
 
     $h: &;
 
+    background: $altBlack;
+    padding: 20px 0;
+
+    &__social {
+        display: flex;
+        margin-left: auto;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    &__item {
+        margin-left: 20px;
+
+        i {
+            color: $white;
+            font-size: 24px;
+        }
+    }
+
     &__hamburguer {
         cursor: pointer;
         width: 25px;

@@ -1,3 +1,32 @@
 .footer {
-    
+    background: $altBlack;
+    padding: 20px 0;
+    position: relative;
+
+    img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate3d(-50%, -50%, 0);
+    }
+
+    &__social {
+        display: none;
+
+        @include mq(md) {
+            display: flex;
+            margin-left: auto;
+            justify-content: flex-end;
+            align-items: center;
+        }
+    }
+
+    &__item {
+        margin-left: 20px;
+
+        i {
+            color: $white;
+            font-size: 24px;
+        }
+    }    
 }
