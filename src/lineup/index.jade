@@ -1,0 +1,39 @@
+extends ../_layouts/base
+
+block config
+  //- Correct base url pathing for this page
+  - var baseUrl = '../';
+
+block content
+  main.home
+    section.home__hero
+      .container
+          .row
+              .col-24
+                  .home__hero__container
+                      a.home__hero__vtr-logo(href="https://vtr.com", target="_blank")
+                          img(src="/images/logo-vtr.png")
+                      .home__hero__wrapper
+                          ul.home__hero__list
+                              li.home__hero__item 
+                                  a(href="/") preventas
+                              li.home__hero__item
+                                  a(href="/lineup") lineup
+                              li.home__hero__item
+                                  a(href="/vtr-shuffle") vtr shuffle
+                              li.home__hero__item
+                                  a(href="/vod") vod
+                              li.home__hero__item
+                                  a(href="/lollaquiz") lollaquizz
+                          .home__hero__image
+                              img(src="/images/heading.png")
+                      .home__hero__lolla-logo
+                          img(src="/images/logo lolla.png")
+    section.home__content
+        .container
+            .row
+                .col-24
+                    .home__content__wrapper.home__content__wrapper--top.-small
+                    .home__content__wrapper.home__content__wrapper--middle.-active.-small
+                      h1 ¡Atentos! Pronto tendremos noticias sobre esta nueva versión de #VTResLollaCL <span>2020</span> 
+                    .home__content__wrapper.home__content__wrapper--bottom
