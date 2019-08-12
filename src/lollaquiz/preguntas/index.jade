@@ -1,0 +1,124 @@
+extends ../../_layouts/base
+
+block config
+  //- Correct base url pathing for this page
+  - var baseUrl = '../../';
+
+block content
+    main.trivia-lollacl.trivia-lollacl--trivia-background#preguntas
+        section.home__hero.home__hero--trivia
+            .container
+                .row
+                    .col-24
+                        .home__hero__container
+                            a.home__hero__vtr-logo(href="https://vtr.com", target="_blank")
+                                img(src="/images/logo-vtr.png")
+                            .home__hero__wrapper
+                                ul.home__hero__list
+                                    li.home__hero__item 
+                                        a(href="/") preventas
+                                    li.home__hero__item
+                                        a(href="/lineup") lineup
+                                    li.home__hero__item
+                                        a(href="/vtr-shuffle") vtr shuffle
+                                    li.home__hero__item
+                                        a(href="/vod") vod
+                                    li.home__hero__item
+                                        a(href="/lollaquiz") lollaquizz
+                            .home__hero__lolla-logo
+                                img(src="/images/logo-lolla.png")
+        .container
+            .row
+                .col-24
+                    .trivia-lollacl__title
+                        img(src="/images/trivia/title.png")
+                        h3.trivia-lollacl__subtitle(style="text-align: center; margin-bottom: 10px;") Adivina el artista de Lollapalooza <span class="_number">2020</span>
+                    each item in site.data.triviaQuestions
+                        .trivia-lollacl__questions-wrapper
+                            .col-24.col-sm-11.trivia-lollacl__col-right
+                                .trivia-lollacl__group.trivia-lollacl__group--right
+                                    h3.trivia-lollacl__question-number
+                                        span.trivia-lollacl__hash #
+                                        p=item.number
+                                    if item.options
+                                        each option,index in item.options
+                                            button.trivia-lollacl__answer
+                                                p.trivia-lollacl__answer-text
+                                                    span
+                                                        |#{index + 1}.
+                                                    |#{option}
+                            .col-24.col-sm-12
+                                .trivia-lollacl__group.trivia-lollacl__group--image.trivia-lollacl__group--white
+                                    img(src=item.image)
+                                    .trivia-lollacl__answer-message.trivia-lollacl__answer-message--wrong
+                                        .trivia-lollacl__answer-wrapper
+                                            img(src="/images/trivia/icon-wrong.png")
+                                        p.trivia-lollacl__message-text respuesta incorrecta
+                                    .trivia-lollacl__answer-message.trivia-lollacl__answer-message--right
+                                        .trivia-lollacl__answer-wrapper
+                                            img(src="/images/trivia/icon-correct.png")
+                                        p.trivia-lollacl__message-text respuesta correcta
+        .trivia-lollacl__breadcrumb
+            .container
+                .row
+                    .col-24.trivia-lollacl__breadcrumb-col
+                        .trivia-lollacl__breadcrumb-group
+                            span.trivia-lollacl__question-indicator
+                            .trivia-lollacl__breadcrumb-line
+                        .trivia-lollacl__breadcrumb-group
+                            span.trivia-lollacl__question-indicator
+                            .trivia-lollacl__breadcrumb-line
+                        .trivia-lollacl__breadcrumb-group
+                            span.trivia-lollacl__question-indicator
+                            .trivia-lollacl__breadcrumb-line
+                        .trivia-lollacl__breadcrumb-group
+                            span.trivia-lollacl__question-indicator
+                            .trivia-lollacl__breadcrumb-line
+                        .trivia-lollacl__breadcrumb-group
+                            span.trivia-lollacl__question-indicator
+                            .trivia-lollacl__breadcrumb-line
+                        .trivia-lollacl__breadcrumb-group
+                            span.trivia-lollacl__question-indicator
+                            .trivia-lollacl__breadcrumb-line
+                        .trivia-lollacl__breadcrumb-group
+                            span.trivia-lollacl__question-indicator
+                            .trivia-lollacl__breadcrumb-line
+                        .trivia-lollacl__breadcrumb-group
+                            span.trivia-lollacl__question-indicator
+                            .trivia-lollacl__breadcrumb-line
+                        .trivia-lollacl__breadcrumb-group
+                            span.trivia-lollacl__question-indicator
+                            .trivia-lollacl__breadcrumb-line
+                        .trivia-lollacl__breadcrumb-group
+                            span.trivia-lollacl__question-indicator
+                            .trivia-lollacl__breadcrumb-line
+                        .trivia-lollacl__breadcrumb-group
+                            span.trivia-lollacl__question-indicator
+                            .trivia-lollacl__breadcrumb-line
+                        .trivia-lollacl__breadcrumb-group
+                            span.trivia-lollacl__question-indicator
+                            .trivia-lollacl__breadcrumb-line
+                        .trivia-lollacl__breadcrumb-group
+                            span.trivia-lollacl__question-indicator
+                            .trivia-lollacl__breadcrumb-line
+                        .trivia-lollacl__breadcrumb-group
+                            span.trivia-lollacl__question-indicator
+                            .trivia-lollacl__breadcrumb-line
+                        .trivia-lollacl__breadcrumb-group
+                            span.trivia-lollacl__question-indicator
+                            .trivia-lollacl__breadcrumb-line
+                        .trivia-lollacl__breadcrumb-group
+                            span.trivia-lollacl__question-indicator
+                            .trivia-lollacl__breadcrumb-line
+                        .trivia-lollacl__breadcrumb-group
+                            span.trivia-lollacl__question-indicator
+                            .trivia-lollacl__breadcrumb-line
+                        .trivia-lollacl__breadcrumb-group
+                            span.trivia-lollacl__question-indicator
+                            .trivia-lollacl__breadcrumb-line
+                        .trivia-lollacl__breadcrumb-group
+                            span.trivia-lollacl__question-indicator
+                            .trivia-lollacl__breadcrumb-line
+                        .trivia-lollacl__breadcrumb-group
+                            span.trivia-lollacl__question-indicator
+                        

@@ -26,6 +26,7 @@ body {
 a {
     color:$link;
     transition: all $duration $easingLight;
+    text-decoration: none;
 
     &:hover{
         color:$linkHover;
@@ -37,6 +38,10 @@ ul {
     list-style: none;
     padding: 0;
     margin: 0;
+}
+
+._number {
+  font-family: $altFont;
 }
 
 // Styling on warning for users on IE7 or below

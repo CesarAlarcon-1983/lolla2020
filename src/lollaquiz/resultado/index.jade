@@ -1,0 +1,59 @@
+extends ../../_layouts/base
+
+block config
+  //- Correct base url pathing for this page
+  - var baseUrl = '../../';
+
+block meta
+    meta(property="og:title" content="¡Yo ya descubrí qué tan experto soy en Lollapalooza Chile! Conoce tu porcentaje con la trivia #VTResLollaCL")
+    meta(property="og:description" content="VTR es Lollapalooza")
+
+block content
+    main.trivia-lollacl.trivia-lollacl--trivia-background.trivia-lollacl--resultado#resultados
+        section.home__hero.home__hero--trivia
+            .container
+                .row
+                    .col-24
+                        .home__hero__container
+                            a.home__hero__vtr-logo(href="https://vtr.com", target="_blank")
+                                img(src="/images/logo-vtr.png")
+                            .home__hero__wrapper
+                                ul.home__hero__list
+                                    li.home__hero__item 
+                                        a(href="/") preventas
+                                    li.home__hero__item
+                                        a(href="/lineup") lineup
+                                    li.home__hero__item
+                                        a(href="/vtr-shuffle") vtr shuffle
+                                    li.home__hero__item
+                                        a(href="/vod") vod
+                                    li.home__hero__item
+                                        a(href="/lollaquiz") lollaquizz
+                            .home__hero__lolla-logo
+                                img(src="/images/logo-lolla.png")
+        .container
+            .row
+                .col-24
+                    .trivia-lollacl__title
+                        img(src="/images/trivia/title.png")
+                        h3.trivia-lollacl__subtitle(style="text-align: center; margin-bottom: 10px;") Adivina el artista de Lollapalooza <span class="_number">2020</span>
+                .col-24.col-sm-11.trivia-lollacl__col-right.trivia-lollacl__col-right--resultado
+                    .trivia-lollacl__group.trivia-lollacl__group--right
+                        h3.trivia-lollacl__subtitle.trivia-lollacl__subtitle--resultado
+                            span#respuestas-correctas XX 
+                            |respuestas correctas
+                        h2.trivia-lollacl__resultado-text#resultado-text
+                        
+                        p.trivia-lollacl__resultado-share comparte tu resultado
+                        .trivia-lollacl__resultado-group
+                            a.trivia-lollacl__icon-facebook(target="_blank" href="#")
+                                img(src="/images/trivia/btn-facebook.png")
+                            a.trivia-lollacl__icon-twitter(href="#" target="_blank")
+                                img(src="/images/trivia/btn-twitter.png")
+                .col-24.col-sm-12
+                    .trivia-lollacl__group.trivia-lollacl__group--image.trivia-lollacl__group--white.trivia-lollacl__group--resultado
+                        img.trivia-lollacl__result-images(src="/images/trivia/icon-result-5.png")
+                        img.trivia-lollacl__result-images(src="/images/trivia/icon-result-4.png")
+                        img.trivia-lollacl__result-images(src="/images/trivia/icon-result-3.png")
+                        img.trivia-lollacl__result-images(src="/images/trivia/icon-result-2.png")
+                        img.trivia-lollacl__result-images(src="/images/trivia/icon-result-1.png")

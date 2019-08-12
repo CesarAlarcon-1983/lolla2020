@@ -5,35 +5,52 @@ block config
   - var baseUrl = '../';
 
 block content
-  main.home
-    section.home__hero
-      .container
-          .row
-              .col-24
-                  .home__hero__container
-                      a.home__hero__vtr-logo(href="https://vtr.com", target="_blank")
-                          img(src="/images/logo-vtr.png")
-                      .home__hero__wrapper
-                          ul.home__hero__list
-                              li.home__hero__item 
-                                  a(href="/") preventas
-                              li.home__hero__item
-                                  a(href="/lineup") lineup
-                              li.home__hero__item
-                                  a(href="/vtr-shuffle") vtr shuffle
-                              li.home__hero__item
-                                  a(href="/vod") vod
-                              li.home__hero__item
-                                  a(href="/lollaquiz") lollaquizz
-                          .home__hero__image
-                              img(src="/images/heading.png")
-                      .home__hero__lolla-logo
-                          img(src="/images/logo lolla.png")
-    section.home__content
+    main.trivia-lollacl.trivia-lollacl--trivia-background
+        section.home__hero.home__hero--trivia
+            .container
+                .row
+                    .col-24
+                        .home__hero__container
+                            a.home__hero__vtr-logo(href="https://vtr.com", target="_blank")
+                                img(src="/images/logo-vtr.png")
+                            .home__hero__wrapper
+                                ul.home__hero__list
+                                    li.home__hero__item 
+                                        a(href="/") preventas
+                                    li.home__hero__item
+                                        a(href="/lineup") lineup
+                                    li.home__hero__item
+                                        a(href="/vtr-shuffle") vtr shuffle
+                                    li.home__hero__item
+                                        a(href="/vod") vod
+                                    li.home__hero__item
+                                        a(href="/lollaquiz") lollaquizz
+                            .home__hero__lolla-logo
+                                img(src="/images/logo-lolla.png")
         .container
             .row
                 .col-24
-                    .home__content__wrapper.home__content__wrapper--top.-small
-                    .home__content__wrapper.home__content__wrapper--middle.-active.-small
-                      h1 ¿Eres un experto en Lollapalooza Chile? ¡Descúbrelo! <br>Próximamente.
-                    .home__content__wrapper.home__content__wrapper--bottom
+                    .trivia-lollacl__title
+                        img(src="/images/trivia/title.png")
+                        h3.trivia-lollacl__subtitle(style="text-align: center; margin-bottom: 10px;") Adivina el artista de Lollapalooza <span class="_number">2020</span>
+                .col-24.col-sm-8.trivia-lollacl__col-right
+                    .trivia-lollacl__group.trivia-lollacl__group--right
+                        h3.trivia-lollacl__subtitle
+                            |¿Puedes adivinar las bandas de Lollapalooza Chile 
+                            span 2019
+                            |?
+                        p.trivia-lollacl__text
+                            |Te desafiamos a demostrar que eres un experto en festivales, muéstranos de qué estás hecho adivinando las bandas y las canciones de Lollapalooza Chile  
+                            span 2019 
+                            | con las pistas que te damos aquí. 
+                        .trivia-lollacl__comment
+                            p Instrucciones
+                            p
+                                |debes adivinar de qué artista de lolla 
+                                span 2019, 
+                                |album o canción se trata con los dos íconos
+                        a.trivia-lollacl__cta-button(href="/lollaquiz/preguntas")
+                            p ¡Comienza el desafío!
+                .col-24.col-sm-14
+                    .trivia-lollacl__group.trivia-lollacl__group--left
+                        img(src="/images/trivia/intro-cards.png")
