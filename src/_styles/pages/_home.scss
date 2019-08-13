@@ -1,8 +1,12 @@
 .home {
     background: url('/images/back-texture.png') no-repeat center center / cover, $altGray;
     overflow: hidden;
-
     min-height: 100vh;
+    padding-top: 65px;
+
+    @include mq(md) {
+        padding-top: 0;
+    }
 
     &__hero {
         padding-bottom: 80px;
@@ -19,26 +23,31 @@
             overflow: hidden;
 
             img {
-                width: 100%;
+                width: 50%;
+
+                @include mq(md) {
+                    width: 100%;
+                }
             }
         }
 
         &__wrapper {
             padding-top: 40px;
-            
+            display: none;
+
             @include mq(md) {
                 padding-top: 80px;
+                display: block;
             }
         }
 
         &__list {
             margin-bottom: 40px;            
+
             @include mq(md) {
-                margin-bottom: 80px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
-
             }
         }
 
@@ -84,14 +93,24 @@
             }
 
             img {
-                width: 100%;
+                display: block;
                 height: auto;
+                width: 50%;
+                margin-left: auto;
+
+                @include mq(md) {
+                    width: 100%;
+                }
             }
         }
 
         &--trivia {
             padding-bottom: 0;
-            margin-bottom: -40px;
+            margin-bottom: 40px;
+            @include mq(md) {
+                margin-bottom: -40px;
+
+            }
         }
     }
 
@@ -198,10 +217,12 @@
             z-index: 2;
             width: 85%;
             font-size: 15px;
+            letter-spacing: -.2px;
 
             @include mq(md) {
                 width: 55%;
                 font-size: 24px;
+                letter-spacing: 0px;
             }
 
             span {

@@ -10,8 +10,8 @@ var Header = function() {
     var closeButton = $('.home__content__close-button');
 
     menuOpen.on('click', function(){
-        header.addClass('-open');
-        body.addClass('-hideOverflow');
+        header.toggleClass('-open');
+        body.toggleClass('-hideOverflow');
     });
 
     var targets = $('[data-target]');

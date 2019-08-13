@@ -2,13 +2,32 @@ header.header
     .container
         .row
             .col-24
-                ul.header__social
-                    li.header__item
-                        a(href="https://www.facebook.com/VTRChile", target="_blank")
-                            i.fa.fa-facebook    
-                    li.header__item
-                        a(href="https://twitter.com/vtrchile", target="_blank")
-                            i.fa.fa-twitter
-                    li.header__item
-                        a(href="https://www.youtube.com/user/VTRChile", target="_blank")
-                            i.fa.fa-instagram
+                nav.header__nav
+                    ul.header__list
+                        li.header__list-item 
+                            a(href="/") preventas
+                        li.header__list-item
+                            a(href="/lineup") lineup
+                        li.header__list-item
+                            a(href="/vtr-shuffle") vtr shuffle
+                        li.header__list-item
+                            a(href="/vod") vod
+                        li.header__list-item
+                            a(href="/lollaquiz") lollaquizz
+
+                .header__wrapper
+                    ul.header__social
+                        li.header__item
+                            a(href="https://www.facebook.com/VTRChile", target="_blank")
+                                i.fa.fa-facebook    
+                        li.header__item
+                            a(href="https://twitter.com/vtrchile", target="_blank")
+                                i.fa.fa-twitter
+                        li.header__item
+                            a(href="https://www.youtube.com/user/VTRChile", target="_blank")
+                                i.fa.fa-instagram
+
+                    .header__hamburguer
+                        span
+                        span
+                        span

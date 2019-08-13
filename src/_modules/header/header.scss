@@ -4,12 +4,73 @@
 
     background: $altBlack;
     padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    
+    @include mq(md) {
+        position: static;
+    }
+    
+    &__nav {
+        @include trans;
+
+        position: absolute;
+        top: 45px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: calc(100vh - 45px);
+        transform: translateX(-100%);
+        background: $altBlack;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+
+        @include mq(md) {
+            display: none;
+        }
+    }
+
+    &__list-item {
+        text-align: center;
+        margin-bottom: 20px;
+
+        a {
+            text-transform: uppercase;
+            text-decoration: none;
+            color: $white;
+            font-weight: 500;
+            font-size: 20px;
+            text-shadow: 
+                -2px -2px 0 #000,  
+                2px -2px 0 #000,
+                -2px 2px 0 #000,
+                2px 2px 0 #000;
+            
+            &:hover {
+                color: $white - #666;
+            }
+        }
+    }
+
+    &__wrapper {
+        display: flex;
+        justify-content: flex-end;
+    }
 
     &__social {
         display: flex;
         margin-left: auto;
         justify-content: flex-end;
         align-items: center;
+        margin-right: 40px;
+
+        @include mq(md) {
+            margin-right: 0;
+        }
     }
 
     &__item {
@@ -21,17 +82,18 @@
         }
     }
 
-    &__hamburguer {
+    &__hamburguer { 
         cursor: pointer;
         width: 25px;
-        height: 25px;
-        margin: auto;
-        position: absolute;
-        right: 32px;
-        top: 30px;
+        height: 20px;
+        z-index: 1000;
+
+        @include mq(md) {
+            display: none;
+        }
 
         span {
-            background-color: $mainColor;
+            background-color: $white;
             border-radius: 2px;
             content: '';
             display: block;
@@ -68,7 +130,7 @@
         }
 
         #{$h}__nav {
-
+            transform: translateX(0);
         }
     }
 }

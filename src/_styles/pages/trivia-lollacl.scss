@@ -2,8 +2,10 @@
     height: 150vh;
     position: relative;
     overflow: hidden;
+    padding-top: 65px;
 
     @include mq(sm) {
+        padding-top: 0;
         height: 90vh;
         min-height: 750px;
         padding-bottom: 0;
